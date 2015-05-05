@@ -1,9 +1,12 @@
 ##spring+jersey rest service startup
 ---
+
 1. mvn package
-+ tomcat部署
-+ postman等rest工具测试
+2. tomcat部署
+3. postman等rest工具测试
+
 ---
+
 * get服务测试
 <table>  
     <tr>
