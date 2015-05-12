@@ -1,26 +1,15 @@
 ## spring+jersey rest service startup    [项目主页](http://geosmart.github.io/me.demo.jersey.startup/) 
-
 ---
-
 1. mvn package
 2. tomcat部署
 3. postman等rest工具测试
-
 ---
+* get服务测试 
 
-* get服务测试
-<table>  
-    <tr>
-        <td style="min-width:50px">url</td>
-        <td>http://localhost:8080/jersey.startup/rest/v100/obj/get</td>
-    </tr>
-    <tr>
-        <td>参数</td>
-        <td>userName=geosmart&token=902370e-4c95-42f2-a1b7-cfc2fdbc5ac3</td>
-    </tr>
-    <tr>
-        <td>结果</td>
-        <td><pre>
+> url  http://localhost:8080/jersey.startup/rest/v100/obj/get   
+> 参数  userName=geosmart&token=902370e-4c95-42f2-a1b7-cfc2fdbc5ac3| 
+> 结果  
+<pre>
             {
     "token": "902370e-4c95-42f2-a1b7-cfc2fdbc5ac3",
     "message": {
@@ -30,21 +19,13 @@
     },
     "result": "geosmart：Hello World！"
 }
-</pre>
-</td>
-    </tr>
-</table> 
-
+</pre> 
 
 * post服务测试
-<table>  
-    <tr>
-        <td style="min-width:50px">url</td>
-        <td>http://localhost:8080/jersey.startup/rest/v100/obj/post</td>
-    </tr>
-    <tr>
-        <td>参数<br/>(application/json)</td>
-        <td><pre>
+
+> url  http://localhost:8080/jersey.startup/rest/v100/obj/post
+> 参数  (application/json)
+<pre>
            {
     "token": "5902370e-4c95-42f2-a1b7-cfc2fdbc5ac3",
     "data": {
@@ -67,11 +48,9 @@
         ]
     }
 }
-</pre></td>
-    </tr>
-    <tr>
-        <td>结果</td>
-        <td><pre>
+</pre>
+> 结果   
+<pre>
           {
     "token": "5902370e-4c95-42f2-a1b7-cfc2fdbc5ac3",
     "message": {
@@ -99,7 +78,5 @@
         ]
     }
 }
-</pre>
-</td>
-    </tr>
-</table>  
+</pre> 
+ 
